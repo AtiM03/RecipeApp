@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace RecipeApp
 {
@@ -17,6 +19,12 @@ namespace RecipeApp
        
         public override string ToString()
         {
+            Name = name;
+            Quantity = quantity;
+            Unit = unit;
+            Calories = calories;
+            FoodGroup = foodGroup;
+
             return $"{Name}: {Quantity} {Unit}, {Calories} cal, {FoodGroup}";
         }
 
