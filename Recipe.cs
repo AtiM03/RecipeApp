@@ -51,13 +51,7 @@ namespace RecipeApp
             Console.WriteLine($"\nTotal Calories: {CalculateTotalCalories()}");
         }
 
-        public void ScaleRecipe(double factor)
-        {
-            foreach (var ingredient in ingredients)
-            {
-                ingredient.Quantity *= factor;
-            }
-        }
+       
 
         
        
