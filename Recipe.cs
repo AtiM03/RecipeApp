@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RecipeApp;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -43,11 +44,41 @@ namespace RecipeApp
             {
                 Console.WriteLine(ingredient);
             }
-            
+            Console.WriteLine("\nSteps:");
+            for (int i = 0; i < steps.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}. {steps[i]}");
+            }
+            Console.WriteLine($"\nTotal Calories: {CalculateTotalCalories()}");
+        }
 
-       
+        public void ScaleRecipe(double factor)
+        {
+            foreach (var ingredient in ingredients)
+            {
+                ingredient.Quantity *= factor;
+            }
+        }
 
-        
-       
+        public void ResetQuantities()
+        {
+            foreach (var ingredient in ingredients)
+            {
+                ingredient.ResetQuantity();
+            }
+            Console.WriteLine("Quantities reset to original values.");
+        }
 
-        
+        public void ClearData()
+        {
+            ingredients.Clear();
+            steps.Clear();
+            Console.WriteLine("Data cleared. You can now enter a new recipe.");
+        }
+
+        public int CalculateTotalCalories()
+        {
+            return ingredients.Sum(ingredient => ingredient.Calories);
+        }
+    }
+}
