@@ -43,13 +43,7 @@ namespace RecipeApp
             {
                 Console.WriteLine(ingredient);
             }
-            Console.WriteLine("\nSteps:");
-            for (int i = 0; i < steps.Count; i++)
-            {
-                Console.WriteLine($"{i + 1}. {steps[i]}");
-            }
-            Console.WriteLine($"\nTotal Calories: {CalculateTotalCalories()}");
-        }
+            
 
        
 
