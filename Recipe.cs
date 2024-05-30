@@ -59,11 +59,7 @@ namespace RecipeApp
             }
         }
 
-        public void ResetQuantities()
-        {
-            Console.WriteLine("Quantities reset to original values.");
-        }
-
+        
        
 
         
