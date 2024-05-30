@@ -64,11 +64,6 @@ namespace RecipeApp
             Console.WriteLine("Quantities reset to original values.");
         }
 
-        public void ClearData()
-        {
-            ingredients.Clear();
-            steps.Clear();
-            Console.WriteLine("Data cleared. You can now enter a new recipe.");
-        }
+       
 
         
