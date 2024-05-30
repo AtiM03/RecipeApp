@@ -71,10 +71,4 @@ namespace RecipeApp
             Console.WriteLine("Data cleared. You can now enter a new recipe.");
         }
 
-        public int CalculateTotalCalories()
-        {
-            return ingredients.Sum(ingredient => ingredient.Calories);
-        }
-    }
-}
-
+        
