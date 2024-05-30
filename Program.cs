@@ -159,7 +159,8 @@ namespace RecipeApp
 
         private static void ClearAllData()
         {
-            throw new NotImplementedException();
+            recipes.Clear();
+            Console.WriteLine("All data cleared.");
         }
     }
 }
