@@ -17,16 +17,4 @@ namespace RecipeApp
         public string FoodGroup { get; set; }
 
        
-        public override string ToString()
-        {
-            Name = name;
-            Quantity = quantity;
-            Unit = unit;
-            Calories = calories;
-            FoodGroup = foodGroup;
-
-            return $"{Name}: {Quantity} {Unit}, {Calories} cal, {FoodGroup}";
-        }
-
-    }
-}
+        
