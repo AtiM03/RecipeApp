@@ -149,15 +149,10 @@ namespace RecipeApp
                 {
                     Console.WriteLine("Recipe not found.");
                 }
-            }
-            static void NotifyCaloriesExceeded(string message)
-            {
-                Console.WriteLine(message);
-
-            }
+            
         }
     }
-}
+
 
 
     
